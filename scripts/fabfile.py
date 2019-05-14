@@ -1,7 +1,7 @@
 from   fabric import *
 
-connect_kwargs = {"key_filename":["/home/test/Downloads/expressjs.pem"]}
-c = Connection(host="ec2-13-233-108-21.ap-south-1.compute.amazonaws.com", user="ubuntu", connect_kwargs=connect_kwargs)
+connect_kwargs = {"key_filename":["<keyfile path for ssh>"]}
+c = Connection(host="<hostname>", user="<user>", connect_kwargs=connect_kwargs)
 
 
 @task
