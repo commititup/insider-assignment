@@ -1,0 +1,17 @@
+[Unit]
+Description=A simple nodejs based web server
+
+[Service]
+ExecStart=/usr/bin/node /usr/local/node-server/app.js
+WorkingDirectory=/usr/local/node-server/
+ExecStopPost= /usr/bin/mail -s "server stopped" --to $EMAIL
+
+User=nobody
+Group=nogroup
+
+# Environment variables:
+Environment=NODE_ENV=production
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

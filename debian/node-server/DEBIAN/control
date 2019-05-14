@@ -1,0 +1,9 @@
+Package: node-server
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Rohit kumar <dropmail.rohit@gmail.com>
+Installed-Size: 1909
+Depends: nodejs
+Section: misc
+Priority: standard
+Description: A simple nodejs server
